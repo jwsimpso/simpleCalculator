@@ -1,0 +1,82 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(6, minmax(150px, auto));
+}
+
+@font-face {
+  font-family: "digital-7.mono.ttf";
+  src: url("./digital-7.mono.ttf");
+}
+
+h1 {
+  font-family: "Spicy Rice", cursive;
+  font-size: 65px;
+  grid-column: 2/8;
+}
+
+.calculatorBody {
+  display: inline-grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(5, 20%);
+  grid-row: 2/5;
+  grid-column: 2/5;
+  border: 5px solid black;
+  background-color: rgb(71, 82, 83);
+  margin-left: 20%;
+}
+
+.solutionBox {
+  grid-column: 1/5;
+  justify-self: end;
+  align-self: end;
+  margin-right: 10px;
+  font-family: "digital-7.mono.ttf";
+  font-size: 3.5rem;
+  background-color: rgb(141, 199, 204);
+  border-radius: 1%;
+  width: 90%;
+  text-align: right;
+  border: 1px solid black;
+}
+
+.numberButtonsDiv {
+  display: grid;
+  grid-template-columns: repeat(3, 33.3%);
+  grid-row-start: 2;
+  grid-row-end: 8;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  margin-top: 2px;
+}
+
+.numberButton {
+  border-radius: 50%;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.75rem;
+  border: 1px solid black;
+}
+
+.operatorButtonsDiv {
+  display: grid;
+  grid-template-rows: 55% 55% 55% 55% 55%;
+}
+.operatorButton {
+  margin-top: 2px;
+  border-radius: 50%;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.75rem;
+  border: 1px solid black;
+  background-color: rgb(182, 66, 45);
+}
+.equalsButton {
+  background-color: rgb(231, 117, 24);
+  margin-top: 0.8em;
+  height: 5rem;
+  align-self: bottom;
+  opacity: 100%;
+}
+
+button:hover {
+  background-color: yellow;
+}
